@@ -29,7 +29,8 @@
         "#f44336",
         "#262626",
         "#f6e9bb",
-        "#e7e7e6"
+        "#e7e7e6",
+        "#15181b"
       ]
     },
     "path": "@PROJECT_PATH@",
@@ -40,7 +41,7 @@
     "favicon": "",
     "noImageResize": "",
     "versionFirst": "4.6.5",
-    "uniqCompNum": 26,
+    "uniqCompNum": 29,
     "versionPublish": "4.6.5",
     "screenshot": "screenshot.png",
     "google-analytics": "<amp-analytics type=\"googleanalytics\">\r\n<script type=\"application/json\">\r\n{\r\n  \"vars\": {\r\n    \"account\": 114935665\r\n  },\r\n  \"triggers\": {\r\n    \"trackPageview\": {\r\n      \"on\": \"visible\",\r\n      \"request\": \"pageview\"\r\n    }\r\n  }\r\n}\r\n</script>\r\n</amp-analytics>",
@@ -51,7 +52,7 @@
       "settings": {
         "main": true,
         "title": "Home",
-        "meta_descr": "",
+        "meta_descr": "Do What You Love Comedy Series continues the tradition of celebrating next-gen comedians and \"Surprise Guests\" every fourth Friday as featured on SF Sketchfest, Netflix, Punchline, Vice TV, Comedy Central and more. #DWYLComedy Stand up",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
@@ -277,10 +278,13 @@
             },
             ".mbr-section-btn": {
               "padding-top": "1.5rem"
+            },
+            ".mbr-section-subtitle I": {
+              "color": "#ffffff"
             }
           },
           "_name": "content1",
-          "_customHTML": "<section class=\"mbr-section content1\" group=\"Article\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-container\">\n        <h2 mbr-if=\"showTitle\" class=\"mbr-title align-center mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-title\">\"San Francisco's breeding ground for next-gen comics and surprise guests.\" - Goldstar</h2>\n        <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">\n            <i>Shape your future web project with sharp design and refine coded functions.</i>\n        </h3>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#content18-i\" target=\"_blank\">TICKETS</a></div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section content1\" group=\"Article\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-container\">\n        <h2 mbr-if=\"showTitle\" class=\"mbr-title align-center mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-title\">\"San Francisco's breeding ground for next-gen comics and surprise guests.\" - Goldstar</h2>\n        <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-7\"><br></h3>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#content18-i\" target=\"_blank\">TICKETS</a></div>\n    </div>\n</section>",
           "_cid": "qKzGGkFqTP",
           "_anchor": "content1-3",
           "_protectedParams": [],
@@ -344,12 +348,30 @@
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor"
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-title": {
+              "padding-bottom": "1rem"
+            },
+            ".mbr-section-btn": {
+              "padding-top": "1.5rem"
+            },
+            ".mbr-section-subtitle": {
+              "text-align": "center"
+            },
+            ".mbr-section-subtitle I": {
+              "color": "#262626"
+            }
           },
-          "_name": "content5",
-          "_customHTML": "<section class=\"mbr-section content5\" plugins=\"amp-main\" group=\"Article\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Backgroud Color\" name=\"bgColor\" value=\"#262626\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-container\">\n        <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#content18-i\">TICKETS</a></div>\n    </div>\n</section>",
-          "_cid": "qKzZ9Wo4nM",
-          "_anchor": "content5-7",
+          "_name": "content19",
+          "_customHTML": "<section class=\"mbr-section content19\" group=\"Article\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/amp-background-logo-882x191.png\">\n            <input type=\"color\" title=\"Background Color\" value=\"#262626\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-container\">\n        <h2 mbr-if=\"showTitle\" class=\"mbr-title align-center mbr-fonts-style mbr-bold mbr-white\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-title\">\n            Article Title with Background Image\n        </h2>\n        <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style mbr-white\" mbr-theme-style=\"display-7\">\n            <i>SF Sketchfest, Netflix, Punchline, Vice TV, Comedy Central &amp; more.</i></h3>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"page1.html#content18-i\">TICKETS</a></div>\n    </div>\n</section>",
+          "_anchor": "content19-r",
+          "_isUserblock": true,
+          "_cid": "qL1Vb1maPf",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -526,11 +548,11 @@
               "font-size": "~\"@{iconsSize}rem\""
             },
             "H1": {
-              "color": "#f44336"
+              "color": "#262626"
             }
           },
           "_name": "social-follow",
-          "_customHTML": "<section class=\"social-follow\" group=\"Social\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"3\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"3\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"10\" value=\"3\" step=\"1\">\n        <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"0.8\" max=\"5\" step=\"0.1\" value=\"2\">\n        <input type=\"color\" name=\"iconsBg\" title=\"Icons Bg\" value=\"#f44336\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#262626\">\n    </mbr-parameters>\n\n    <div class=\"wrapper\">\n        <h1 class=\"mbr-fonts-style align-center mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n            <a href=\"https://www.twitter.com/dwylcomedy\" target=\"_blank\">#DWYLComedy</a></h1>\n        <div class=\"icons-list\" mbr-list mbr-list-grow=\"iconsCount\">\n            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                <span mbr-icon class=\"amp-iconfont fa-facebook-square fa\"></span>\n            </a>\n            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                <span mbr-icon class=\"amp-iconfont fa-yelp fa\"></span>\n            </a>\n            <a href=\"mailto:dwyl@gmail.com\">\n                <span mbr-icon class=\"amp-iconfont fa-envelope-o fa\"></span>\n            </a>\n            \n            \n            \n            \n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"social-follow\" group=\"Social\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"3\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"3\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"10\" value=\"3\" step=\"1\">\n        <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"0.8\" max=\"5\" step=\"0.1\" value=\"2\">\n        <input type=\"color\" name=\"iconsBg\" title=\"Icons Bg\" value=\"#f44336\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#262626\">\n    </mbr-parameters>\n\n    <div class=\"wrapper\">\n        <h1 class=\"mbr-fonts-style align-center mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n            <a href=\"https://www.twitter.com/dwylcomedy\" target=\"_blank\">#DWYLComedy</a><br>do what you love comedy, comedy, stand up, san francisco<br></h1>\n        <div class=\"icons-list\" mbr-list mbr-list-grow=\"iconsCount\">\n            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                <span mbr-icon class=\"amp-iconfont fa-facebook-square fa\"></span>\n            </a>\n            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                <span mbr-icon class=\"amp-iconfont fa-yelp fa\"></span>\n            </a>\n            <a href=\"mailto:dwyl@gmail.com\">\n                <span mbr-icon class=\"amp-iconfont fa-envelope-o fa\"></span>\n            </a>\n            \n            \n            \n            \n        </div>\n    </div>\n</section>",
           "_cid": "qKCRJAeBeJ",
           "_anchor": "social-follow-c",
           "_protectedParams": [],
@@ -543,7 +565,8 @@
     "page1.html": {
       "settings": {
         "title": "About The Show",
-        "order": 1
+        "order": 1,
+        "meta_descr": "Each #DWYLComedy show features resident comedians and co-producers Chey Bell, Shanti Charan, and Anthony Medina with rotating \"Surprise Guests\".\n\nAll Do What You Love Comedy Series shows are for mature audiences who are 18+. No drink minimums. Please arrive at the venue by 6:15 pm, and check in with the ticket clerk. Doors and live music starts at 6 pm. The comedy show starts promptly at 6:30 pm and ends 8 pm.\n\nLocated in a historic venue built in 1921, in the heart of San Francisco's MidMarket district near Twitter, Civic Center BART and MUNI lines, WeWork Civic Center is the home of Do What You Love Comedy Series."
       },
       "components": [
         {
@@ -956,14 +979,14 @@
               "font-size": "~\"@{iconsSize}rem\""
             },
             "H1": {
-              "color": "#f44336"
+              "color": "#262626"
             }
           },
           "_name": "social-follow",
-          "_customHTML": "<section class=\"social-follow\" group=\"Social\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"3\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"3\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"10\" value=\"3\" step=\"1\">\n        <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"0.8\" max=\"5\" step=\"0.1\" value=\"2\">\n        <input type=\"color\" name=\"iconsBg\" title=\"Icons Bg\" value=\"#f44336\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#262626\">\n    </mbr-parameters>\n\n    <div class=\"wrapper\">\n        <h1 class=\"mbr-fonts-style align-center mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n            #DWYLComedy</h1>\n        <div class=\"icons-list\" mbr-list mbr-list-grow=\"iconsCount\">\n            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                <span mbr-icon class=\"amp-iconfont fa-facebook-square fa\"></span>\n            </a>\n            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                <span mbr-icon class=\"amp-iconfont fa-yelp fa\"></span>\n            </a>\n            <a href=\"mailto:dwyl@gmail.com\">\n                <span mbr-icon class=\"amp-iconfont fa-envelope-o fa\"></span>\n            </a>\n            \n            \n            \n            \n        </div>\n    </div>\n</section>",
-          "_anchor": "social-follow-j",
+          "_customHTML": "<section class=\"social-follow\" group=\"Social\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"3\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"3\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"range\" inline title=\"Icons Count\" name=\"iconsCount\" min=\"1\" max=\"10\" value=\"3\" step=\"1\">\n        <input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"0.8\" max=\"5\" step=\"0.1\" value=\"2\">\n        <input type=\"color\" name=\"iconsBg\" title=\"Icons Bg\" value=\"#f44336\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#262626\">\n    </mbr-parameters>\n\n    <div class=\"wrapper\">\n        <h1 class=\"mbr-fonts-style align-center mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n            <a href=\"https://www.twitter.com/dwylcomedy\" target=\"_blank\">#DWYLComedy</a><br>do what you love comedy, comedy, stand up, san francisco<br></h1>\n        <div class=\"icons-list\" mbr-list mbr-list-grow=\"iconsCount\">\n            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                <span mbr-icon class=\"amp-iconfont fa-facebook-square fa\"></span>\n            </a>\n            <a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\">\n                <span mbr-icon class=\"amp-iconfont fa-yelp fa\"></span>\n            </a>\n            <a href=\"mailto:dwyl@gmail.com\">\n                <span mbr-icon class=\"amp-iconfont fa-envelope-o fa\"></span>\n            </a>\n            \n            \n            \n            \n        </div>\n    </div>\n</section>",
+          "_anchor": "social-follow-s",
           "_isUserblock": true,
-          "_cid": "qKKu29Ohto",
+          "_cid": "qL236wvXU9",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
