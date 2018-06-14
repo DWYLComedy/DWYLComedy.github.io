@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "DWYL Comedy Series",
-    "currentPage": "DWYL Comedy Series.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise-amp",
       "title": "Mobirise AMP",
@@ -22,7 +22,7 @@
         "display7Font": "Roboto",
         "display7Size": "1.2",
         "display4Font": "Roboto",
-        "display4Size": "0.6",
+        "display4Size": "0.4",
         "isRoundedButtons": true
       },
       "additionalSetColors": [
@@ -308,11 +308,12 @@
               "color": "#f8e71c"
             },
             ".mbr-section-subtitle": {
-              "text-align": "right"
+              "text-align": "right",
+              "color": "#f8e71c"
             }
           },
           "_name": "content19",
-          "_customHTML": "<section class=\"mbr-section content19\" group=\"Article\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/dwyl-web-h1-yel2-882x191-882x191.png\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#000000\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-container\">\n        <h2 mbr-if=\"showTitle\" class=\"mbr-title align-center mbr-fonts-style mbr-bold mbr-white\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-title\"><br>&nbsp;&nbsp;<br><br></h2>\n        <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style mbr-white\" mbr-theme-style=\"display-4\">\n            <i><br></i><br><font color=\"#1f1f1f\"><i>Experience clever and quirky comedy like only San Francisco can provide in the heart of MidMarket district near Twitter.</i></font><br><br><br><br><br><br><br><br><br><font color=\"#1f1f1f\"><i>Do What You Love Comedy Series curates clever and quirky comedy shows featuring hilarious next-gen Bay Area comics as featured on SF Sketchfest, Netflix, Punch Line, Vice TV, Comedy Central and more.  The performers are kept secret until they step up on stage!</i></font></h3>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n            <a class=\"btn btn-white-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section content19\" group=\"Article\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/dwyl-web-h1-yel2-882x191-882x191.png\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#000000\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-container\">\n        <h2 mbr-if=\"showTitle\" class=\"mbr-title align-center mbr-fonts-style mbr-bold mbr-white\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-title\"><br>&nbsp;&nbsp;<br><br></h2>\n        <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style mbr-white\" mbr-theme-style=\"display-4\">\n            <i><br></i><br><font color=\"#1f1f1f\"><i>Experience clever and quirky comedy like only San Francisco can provide in the heart of MidMarket district near Twitter.</i></font><br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><font color=\"#1f1f1f\"><i>Do What You Love Comedy Series curates clever and quirky comedy shows featuring hilarious next-gen Bay Area comics as featured on SF Sketchfest, Netflix, Punch Line, Vice TV, Comedy Central and more.  The performers are kept secret until they step up on stage!</i></font></h3>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n            <a class=\"btn btn-white-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n        </div>\n    </div>\n</section>",
           "_cid": "qMPAwWnhEh",
           "_anchor": "content19-3",
           "_protectedParams": [],
