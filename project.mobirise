@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "DWYL Comedy Series",
-    "currentPage": "index.html",
+    "currentPage": "Upcoming Shows.html",
     "theme": {
       "name": "mobirise-amp",
       "title": "Mobirise AMP",
@@ -803,50 +803,6 @@
           "_customHTML": "<section class=\"content4 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-text align-center mbr-fonts-style mbr-light\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-text>Get comfy with your new favorite comics in unique and intimate San Francisco settings! &nbsp;Each comedy series is a curated mixture of clever and quirky stand-up comedy showcasing hilarious next-gen and headlining Bay Area comics. &nbsp;<br><br>Previous comics have performed for hundreds of comedy and pop-culture fans with features including SF Sketchfest, Netflix, Punch Line, Vice TV, Comedy Central and more!  The performers are kept secret until they hop on stage. So avoid FOMO and grab your #DWYLComedy tickets today!</div>\n    </div>\n</section>",
           "_cid": "qNP8aqrNVU",
           "_anchor": "content4-u",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@flexDirection)": {
-              ".mbr-row": {
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".btn-container": {
-              "display": "flex",
-              "align-items": "center",
-              "justify-content": "center"
-            },
-            "@media (min-width: 768px)": {
-              ".mbr-section-subtitle": {
-                "margin-bottom": "0"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#1f1f1f",
-              "text-align": "left"
-            },
-            ".mbr-section-subtitle": {
-              "color": "#1f1f1f",
-              "text-align": "left"
-            }
-          },
-          "_name": "info2",
-          "_customHTML": "<section class=\"info2\" group=\"Testimonials & Info\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Button\" name=\"showButton\" checked>\n        <input type=\"checkbox\" title=\"Text on Left/Right\" name=\"flexDirection\" condition=\"(showTitle || showSubtitle) && showButton\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/04.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-8\" mbr-if=\"showTitle || showSubtitle\">\n                <h2 class=\"mbr-section-title align-right mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    Friday, June 22nd</h2>\n                <h3 class=\"mbr-section-subtitle align-right mbr-fonts-style mbr-light\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    San Francisco<br>6:00 PM Doors<br><b>6:30 PM</b>&nbsp;<b>Showtime</b><br>Ages 18+</h3>\n            </div>\n            <div class=\"btn-container mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4\" mbr-if=\"showButton\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"https://www.eventbrite.com/e/do-what-you-love-comedy-series-tickets-44715538379?aff=dwylwebsite\" target=\"_blank\">BUY TICKETS</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "info2-q",
-          "_isUserblock": true,
-          "_cid": "qNP3abE2kQ",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
