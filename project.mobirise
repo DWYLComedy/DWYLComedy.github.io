@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "DWYL Comedy Series",
-    "currentPage": "Upcoming Shows.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise-amp",
       "title": "Mobirise AMP",
@@ -44,7 +44,7 @@
     "versionPublish": "4.6.6",
     "path": "@PROJECT_PATH@",
     "screenshot": "screenshot.png",
-    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n\n   <url>\n\n      <loc>http://www.dwylcomedy.com/</loc>\n\n      <lastmod>2018-06-27</lastmod>\n\n      <changefreq>monthly</changefreq>\n\n      <priority>0.8</priority>\n\n   </url>\n\n   <url>\n\n      <loc>http://www.dwylcomedy.com/DWYL%20Comedy%20Series.html</loc>\n\n      <changefreq>monthly</changefreq>\n\n   </url>",
     "robotsSwitcher": "on",
     "sitemapSwitcherAuto": "on",
     "sitemapSwitcher": "on"
