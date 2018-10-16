@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "DWYL Comedy Series",
-    "currentPage": "index.html",
+    "currentPage": "DrinksWithComicsbyob-drinks-with-san-francisco-comedians-tickets.html",
     "theme": {
       "name": "mobirise-amp",
       "title": "Mobirise AMP",
@@ -559,7 +559,7 @@
         }
       ]
     },
-    "UpcomingShows.html": {
+    "UpcomingShowsdo-what-you-love-comedy-series-tickets.html": {
       "settings": {
         "title": "Upcoming Shows",
         "order": 1,
@@ -1073,7 +1073,7 @@
         }
       ]
     },
-    "DrinksWithComics.html": {
+    "DrinksWithComicsbyob-drinks-with-san-francisco-comedians-tickets.html": {
       "settings": {
         "title": "Drinks With Comedians",
         "order": 2,
